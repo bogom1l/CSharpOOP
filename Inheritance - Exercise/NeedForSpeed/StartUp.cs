@@ -22,7 +22,7 @@
             var SC = new SportCar(1, 2);
             System.Console.WriteLine(SC.FuelConsumption);
 
-            var MC = new MotorCycle(1, 2);
+            var MC = new Motorcycle(1, 2);
             System.Console.WriteLine(MC.FuelConsumption);
 
         }
