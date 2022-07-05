@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32602.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Encapsulation - Exercise", "Encapsulation - Exercise\Encapsulation - Exercise.csproj", "{ACC2350A-5C8E-494D-9BD0-722D523356E0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Encapsulation - Exercise", "Encapsulation - Exercise\Encapsulation - Exercise.csproj", "{ACC2350A-5C8E-494D-9BD0-722D523356E0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.ClassBoxData", "1.ClassBoxData\1.ClassBoxData.csproj", "{99381975-902E-436A-9224-6FC703E1F14F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1.ClassBoxData", "1.ClassBoxData\1.ClassBoxData.csproj", "{99381975-902E-436A-9224-6FC703E1F14F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.FootballTeamGenerator", "5.FootballTeamGenerator\5.FootballTeamGenerator.csproj", "{E6C0967C-55F8-4327-A09D-C8108E2D635C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{99381975-902E-436A-9224-6FC703E1F14F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{99381975-902E-436A-9224-6FC703E1F14F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{99381975-902E-436A-9224-6FC703E1F14F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6C0967C-55F8-4327-A09D-C8108E2D635C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6C0967C-55F8-4327-A09D-C8108E2D635C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6C0967C-55F8-4327-A09D-C8108E2D635C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6C0967C-55F8-4327-A09D-C8108E2D635C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
