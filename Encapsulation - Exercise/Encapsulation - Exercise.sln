@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32602.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Encapsulation - Exercise", "Encapsulation - Exercise\Encapsulation - Exercise.csproj", "{ACC2350A-5C8E-494D-9BD0-722D523356E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.ClassBoxData", "1.ClassBoxData\1.ClassBoxData.csproj", "{99381975-902E-436A-9224-6FC703E1F14F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ACC2350A-5C8E-494D-9BD0-722D523356E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACC2350A-5C8E-494D-9BD0-722D523356E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACC2350A-5C8E-494D-9BD0-722D523356E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACC2350A-5C8E-494D-9BD0-722D523356E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99381975-902E-436A-9224-6FC703E1F14F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99381975-902E-436A-9224-6FC703E1F14F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99381975-902E-436A-9224-6FC703E1F14F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99381975-902E-436A-9224-6FC703E1F14F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1FC0ACB6-3447-49CE-8B17-7B040294CB6E}
+	EndGlobalSection
+EndGlobal
