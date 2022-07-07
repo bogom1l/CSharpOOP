@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Encapsulation - Exercise", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1.ClassBoxData", "1.ClassBoxData\1.ClassBoxData.csproj", "{99381975-902E-436A-9224-6FC703E1F14F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.FootballTeamGenerator", "5.FootballTeamGenerator\5.FootballTeamGenerator.csproj", "{E6C0967C-55F8-4327-A09D-C8108E2D635C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "5.FootballTeamGenerator", "5.FootballTeamGenerator\5.FootballTeamGenerator.csproj", "{E6C0967C-55F8-4327-A09D-C8108E2D635C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.ShoppingSpree", "3.ShoppingSpree\3.ShoppingSpree.csproj", "{6515EED9-9470-42E5-BA4C-9EE060A396A0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{E6C0967C-55F8-4327-A09D-C8108E2D635C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E6C0967C-55F8-4327-A09D-C8108E2D635C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E6C0967C-55F8-4327-A09D-C8108E2D635C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6515EED9-9470-42E5-BA4C-9EE060A396A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6515EED9-9470-42E5-BA4C-9EE060A396A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6515EED9-9470-42E5-BA4C-9EE060A396A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6515EED9-9470-42E5-BA4C-9EE060A396A0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
