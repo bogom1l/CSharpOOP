@@ -36,14 +36,6 @@ namespace _3.ShoppingSpree
                     products.Add(currProduct);
                 }
 
-                Dictionary<string, List<string>> dict = new Dictionary<string, List<string>>();
-
-                foreach (var currPerson in persons)
-                {
-                    dict[currPerson.Name] = new List<string>();
-                }
-
-
                 while (true)
                 {
                     string command = Console.ReadLine();
@@ -65,7 +57,8 @@ namespace _3.ShoppingSpree
                         {
                             Console.WriteLine($"{currPerson.Name} bought {currProduct.Name}");
                             currPerson.Money -= currProduct.Cost;
-                            dict[currPerson.Name].Add(currProduct.Name);
+
+                            currPerson.AddProduct(currProduct);
                         }
                         else
                         {
@@ -74,17 +67,18 @@ namespace _3.ShoppingSpree
                     }
                 }
 
-                foreach (var kvp in dict)
+                foreach (var p in persons)
                 {
-                    if (kvp.Value.Count > 0)
+                    if (p.Products.Count > 0)
                     {
-                        Console.WriteLine($"{kvp.Key} - {string.Join(", ", kvp.Value)}");
+                        Console.WriteLine($"{p.Name} - {string.Join(", ", p.Products.Select(p => p.Name))}");
                     }
                     else
                     {
-                        Console.WriteLine($"{kvp.Key} - Nothing bought");
+                        Console.WriteLine($"{p.Name} - Nothing bought");
                     }
                 }
+
             }
             catch (Exception e)
             {

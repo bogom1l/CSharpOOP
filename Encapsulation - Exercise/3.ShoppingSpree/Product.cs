@@ -43,9 +43,5 @@ namespace _3.ShoppingSpree
         }
 
 
-
-
-
-
     }
 }

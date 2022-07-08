@@ -45,6 +45,15 @@ namespace _3.ShoppingSpree
             }
         }
 
+        public List<Product> Products {
+            get => this.products;
+        }
 
+        public void AddProduct(Product p)
+        {
+            this.products.Add(p);
+        }
+
+     
     }
 }
