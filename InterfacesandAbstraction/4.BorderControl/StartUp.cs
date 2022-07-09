@@ -1,11 +1,12 @@
-﻿namespace Telephony
+﻿using System;
+
+namespace _4.BorderControl
 {
-    using System;
     public class StartUp
     {
         static void Main(string[] args)
         {
-           
+            Console.WriteLine("ALo!");
 
 
 
