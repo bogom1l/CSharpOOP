@@ -15,9 +15,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "8.CollectionHierarchy", "8.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "4.BorderControl", "4.BorderControl\4.BorderControl.csproj", "{BBC65AF7-27F4-4A60-8B80-FF7D2B4D6279}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.BirthdayCelebrations", "5.BirthdayCelebrations\5.BirthdayCelebrations.csproj", "{7E347A8E-C8C9-47E5-A8C6-5CFC5299F10E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "5.BirthdayCelebrations", "5.BirthdayCelebrations\5.BirthdayCelebrations.csproj", "{7E347A8E-C8C9-47E5-A8C6-5CFC5299F10E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6.FoodShortage", "6.FoodShortage\6.FoodShortage.csproj", "{71677724-5567-44D3-9FEA-2A35345E13CF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "6.FoodShortage", "6.FoodShortage\6.FoodShortage.csproj", "{71677724-5567-44D3-9FEA-2A35345E13CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "9.ExplicitInterfaces", "9.ExplicitInterfaces\9.ExplicitInterfaces.csproj", "{885B2A3C-40CF-42B5-90A1-16ECD0098DDA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{71677724-5567-44D3-9FEA-2A35345E13CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{71677724-5567-44D3-9FEA-2A35345E13CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{71677724-5567-44D3-9FEA-2A35345E13CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{885B2A3C-40CF-42B5-90A1-16ECD0098DDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{885B2A3C-40CF-42B5-90A1-16ECD0098DDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{885B2A3C-40CF-42B5-90A1-16ECD0098DDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{885B2A3C-40CF-42B5-90A1-16ECD0098DDA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
