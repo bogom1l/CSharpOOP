@@ -28,7 +28,7 @@ namespace _6.FoodShortage
 
                     buyer = new Citizen(name, age, id, bd);
                 }
-                else //Rebel
+                else // Rebel
                 {
                     string name = tokens[0];
                     string id = tokens[1];
