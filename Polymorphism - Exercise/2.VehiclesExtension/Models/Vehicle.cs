@@ -1,9 +1,9 @@
-﻿using _1.Vehicles_v2.Models.Interfaces;
+﻿using _2.VehiclesExtension.Models.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace _1.Vehicles_v2.Models
+namespace _2.VehiclesExtension.Models
 {
     public abstract class Vehicle : IVehicle
     {
@@ -30,7 +30,7 @@ namespace _1.Vehicles_v2.Models
 
         protected virtual double FuelConsumptionModifier { get; }
 
-        public abstract double TankCapacity { get; set; } //protected? private set?
+
 
         public string Drive(double distance)
         {

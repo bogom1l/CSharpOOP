@@ -1,9 +1,9 @@
-﻿using _1.Vehicles_v2.Models;
+﻿using _2.VehiclesExtension.Models;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace _1.Vehicles_v2.Core
+namespace _2.VehiclesExtension.Core
 {
     public class Engine : IEngine
     {
@@ -43,20 +43,10 @@ namespace _1.Vehicles_v2.Core
                     double liters = double.Parse(tokens[2]);
                     if (vehicleType == "Car")
                     {
-                        if (this.car.TankCapacity + liters > this.car.FuelQuantity)
-                        {
-                            Console.WriteLine($"Cannot fit {liters} fuel in the tank"); //liters?
-                            continue;
-                        }
                         this.car.Refuel(liters);
                     }
                     else if (vehicleType == "Truck")
                     {
-                        if (this.car.TankCapacity + liters > this.car.FuelQuantity)
-                        {
-                            Console.WriteLine($"Cannot fit {liters} fuel in the tank"); //liters?
-                            continue;
-                        }
                         this.truck.Refuel(liters);
                     }
                 }

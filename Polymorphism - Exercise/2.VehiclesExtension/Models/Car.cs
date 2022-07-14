@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace _1.Vehicles_v2.Models
+namespace _2.VehiclesExtension.Models
 {
     public class Car : Vehicle
     {
@@ -10,9 +10,6 @@ namespace _1.Vehicles_v2.Models
         public Car(double fuelQuantity, double fuelConsumption) : base(fuelQuantity, fuelConsumption) 
         {
         }
-
-        public override double TankCapacity { get ; set; }
-
         protected override double FuelConsumptionModifier => CarFuelConsModifier;
 
     }

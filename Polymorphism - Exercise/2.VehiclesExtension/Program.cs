@@ -1,9 +1,9 @@
-﻿using _1.Vehicles_v2.Core;
-using _1.Vehicles_v2.Factoring;
-using _1.Vehicles_v2.Models;
+﻿using _2.VehiclesExtension.Core;
+using _2.VehiclesExtension.Factoring;
+using _2.VehiclesExtension.Models;
 using System;
 
-namespace _1.Vehicles_v2
+namespace _2.VehiclesExtension
 {
     public class StartUp
     {
@@ -13,15 +13,11 @@ namespace _1.Vehicles_v2
             string[] truckData = Console.ReadLine().Split();
 
             IVehicleFactory vehicleFactory = new VehicleFactory();
-
-            double fuelQty = double.Parse(carData[1]);
-
             Vehicle car = vehicleFactory.CreateVehicle(carData[0], double.Parse(carData[1]), double.Parse(carData[2]));
             Vehicle truck = vehicleFactory.CreateVehicle(truckData[0], double.Parse(truckData[1]), double.Parse(truckData[2]));
 
             IEngine engine = new Engine(car, truck);
             engine.Start();
-
         }
     }
 }
