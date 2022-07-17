@@ -6,55 +6,70 @@ namespace _1.Vehicles
     {
         static void Main(string[] args)
         {
-            string[] tokens1 = Console.ReadLine().Split();
-            IDrivable car = new Car(double.Parse(tokens1[1]), double.Parse(tokens1[2]));
+            string[] carData = Console.ReadLine().Split();
+            double carFuelQuantity = double.Parse(carData[1]);
+            double carLitersPerKilometer = double.Parse(carData[2]);
+            Vehicle car = new Car(carFuelQuantity, carLitersPerKilometer);
 
-            string[] tokens2 = Console.ReadLine().Split();
-            IDrivable truck = new Truck(double.Parse(tokens1[1]), double.Parse(tokens1[2]));
+            string[] truckData = Console.ReadLine().Split();
+            double truckFuelQuantity = double.Parse(truckData[1]);
+            double truckLitersPerKilometer = double.Parse(truckData[2]);
+            Vehicle truck = new Truck(truckFuelQuantity, truckLitersPerKilometer);
 
             int N = int.Parse(Console.ReadLine());
 
             for (int i = 0; i < N; i++)
             {
                 string[] tokens = Console.ReadLine().Split();
-                string action = tokens[0];
-                string vehicle = tokens[1];
+                string action = tokens[0]; //Drive/Refuel
+                string currVehicle = tokens[1];
+                double thirdParam = double.Parse(tokens[2]);
 
                 if (action == "Drive")
                 {
-                    if (vehicle == "Car")
+                    if (currVehicle == "Car")
                     {
-                        int distance = int.Parse(tokens[2]);
-
-
+                        if (car.FuelQuantity >= thirdParam * car.FuelConspumtionInLitersPerKilometer)
+                        {
+                            car.Drive(thirdParam);
+                            Console.WriteLine($"{currVehicle} travelled {thirdParam} km");
+                        }
+                        else
+                        {
+                            Console.WriteLine($"{currVehicle} needs refueling");
+                        }
                     }
-                    else if(vehicle == "Truck")
+                    else if (currVehicle == "Truck")
                     {
-                        int distance = int.Parse(tokens[2]);
-
-
+                        if (truck.FuelQuantity >= thirdParam * truck.FuelConspumtionInLitersPerKilometer)
+                        {
+                            truck.Drive(thirdParam);
+                            Console.WriteLine($"{currVehicle} travelled {thirdParam} km");
+                        }
+                        else
+                        {
+                            Console.WriteLine($"{currVehicle} needs refueling");
+                        }
                     }
+
                 }
-                else if(action == "Refuel")
+                else if (action == "Refuel")
                 {
-                    if (vehicle == "Car")
+                    if (currVehicle == "Car")
                     {
-                        int liters = int.Parse(tokens[2]);
-
-
+                        car.Refuel(thirdParam);
                     }
-                    else if (vehicle == "Truck")
+                    else if (currVehicle == "Truck")
                     {
-                        int liters = int.Parse(tokens[2]);
-
-
+                        truck.Refuel(thirdParam);
                     }
                 }
 
             }
 
-            Console.WriteLine("Car: {liters:f2}");
-            Console.WriteLine("Truck: {liters:f2}");
+            Console.WriteLine($"Car: {car.FuelQuantity:f2}");
+            Console.WriteLine($"Truck: {truck.FuelQuantity:f2}");
+
 
         }
     }

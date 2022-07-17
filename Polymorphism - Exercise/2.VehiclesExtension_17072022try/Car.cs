@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace _1.Vehicles
+namespace _2.VehiclesExtension_17072022try
 {
     public class Car : Vehicle
     {
         private const double fuelConsumptionBonus = 0.9;
 
-        public Car(double fuelQuantity, double fuelConspumtionInLitersPerKilometer) 
-            : base(fuelQuantity, fuelConspumtionInLitersPerKilometer)
+        public Car(double fuelQuantity, double fuelConspumtionInLitersPerKilometer, double tankCapacity) 
+            : base(fuelQuantity, fuelConspumtionInLitersPerKilometer, tankCapacity)
         {
             this.FuelConspumtionInLitersPerKilometer += fuelConsumptionBonus;
         }
