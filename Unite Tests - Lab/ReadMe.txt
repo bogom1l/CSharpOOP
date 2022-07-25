@@ -1,0 +1,1 @@
+boring af so didnt bother to do it good, will do the exercise better
