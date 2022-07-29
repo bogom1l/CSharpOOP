@@ -41,7 +41,7 @@
 
             hero.AddWeapon(weapon);
             weapons.Remove(weapon);
-            return string.Format(OutputMessages.HeroBattle, heroName, weaponName.ToLower());
+            return string.Format(OutputMessages.HeroBattle, heroName, weapon.GetType().Name.ToLower());
         }
 
         public string CreateHero(string type, string name, int health, int armour)
