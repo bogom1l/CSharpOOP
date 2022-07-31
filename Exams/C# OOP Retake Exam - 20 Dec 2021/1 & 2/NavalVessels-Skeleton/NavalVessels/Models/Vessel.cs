@@ -14,14 +14,6 @@
         private double speed;
         private List<string> targets;
 
-        protected Vessel(string name, double mainWeaponCaliber, double speed)
-        {
-            this.Name = name;
-            this.MainWeaponCaliber = mainWeaponCaliber;
-            this.Speed = speed;
-            this.targets = new List<string>();
-            this.captain = null;
-        }
         protected Vessel(string name, double mainWeaponCaliber, double speed, double armorThickness)
         {
             this.Name = name;

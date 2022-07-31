@@ -1,15 +1,15 @@
 ﻿namespace NavalVessels.Models
 {
+    using NavalVessels.Models.Contracts;
     using System;
 
-    public class Battleship : Vessel
+    public class Battleship : Vessel, IBattleship
     {
         private const int DefaultArmorThickness = 300;
         public Battleship(string name, double mainWeaponCaliber, double speed)
-            : base(name, mainWeaponCaliber, speed)
+            : base(name, mainWeaponCaliber, speed, DefaultArmorThickness)
         {
             this.SonarMode = false;
-            this.ArmorThickness = DefaultArmorThickness;
         }
 
         public bool SonarMode { get; private set; }

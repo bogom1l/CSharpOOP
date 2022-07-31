@@ -1,18 +1,18 @@
 ﻿namespace NavalVessels.Models
 {
+    using NavalVessels.Models.Contracts;
     using System;
 
-    public class Submarine : Vessel
+    public class Submarine : Vessel, ISubmarine
     {
         private const int DefaultArmorThickness = 200;
         public Submarine(string name, double mainWeaponCaliber, double speed) 
-            : base(name, mainWeaponCaliber, speed)
+            : base(name, mainWeaponCaliber, speed, DefaultArmorThickness)
         {
             this.SubmergeMode = false;
-            this.ArmorThickness = DefaultArmorThickness;
         }
 
-        public bool SubmergeMode  { get; private set; }
+        public bool SubmergeMode { get; private set; }
 
         public override void RepairVessel()
         {
