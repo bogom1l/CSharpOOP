@@ -62,7 +62,7 @@
             sb.AppendLine($"The {this.RaceName} race has:");
             sb.AppendLine($"Participants: {this.pilots.Count}");
             sb.AppendLine($"Number of laps: {this.NumberOfLaps}");
-            sb.AppendLine($"Took place: ");
+            sb.Append($"Took place: ");
             if (this.TookPlace)
             {
                 sb.Append("Yes");

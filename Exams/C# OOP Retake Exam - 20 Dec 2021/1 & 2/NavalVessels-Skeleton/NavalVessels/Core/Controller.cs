@@ -96,10 +96,10 @@
         {
             IVessel vessel = null;
 
-            var checkVessel = vessels.Models.FirstOrDefault(x => x.Name == name);
-            if (checkVessel != null)
+            //IVessel checkVessel = vessels.Models.FirstOrDefault(x => x.Name == name);
+            if (vessels.Models.Any(x => x.Name == name))
             {
-                return $"{vessel.GetType().Name} vessel {name} is already manufactured.";
+                return $"{vesselType} vessel {name} is already manufactured.";
             }
 
             if (vesselType == nameof(Submarine))
